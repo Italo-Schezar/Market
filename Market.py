@@ -1,5 +1,6 @@
-itens = ["Apple", "Banana", "Red Meat", "Chicken", "Cocumber", "Potato"]
-AdmPass = "Root123" ; tries = 0 ; n = 1
+itens = ["Apple", "Banana", "Red Meat", "Chicken", "Cocumber", "Potato"];
+prices = [5.0,23.0,4.0,6.0,10.0,14.0]; Orderlist = []
+AdmPass = "Root123" ; tries = 0 ; n = 1; j = 1;k = 0;l = 0
 User = input("Customer / Admnister: ")
 
 if User == "Admnister":
@@ -12,15 +13,21 @@ if User == "Admnister":
 
 elif User == "Customer":
     for i in itens:
-        print(n,i)
-        n+=1
-        
-    Order = itens[int(input("What's your order: "))]
+        print(f"{n}. {i} - $ {prices[k]:.2f}")
+        n+=1; k+=1
+
+    while not 0 in Orderlist:
+        Order = Orderlist.append(int(input("What's your order(0 to exit): ")))
     
-    if len(Order) > 1:
-        for j in len(Order)
-        Order[j] = itens [Order[j]]
-        j += 1
+    for l in Orderlist:
+        print(Orderlist,prices[Orderlist[l]])
+        l+=1
+
+
+
+
+    
+    
     
     
     
