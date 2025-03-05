@@ -1,5 +1,5 @@
 itens = ["Apple", "Banana", "Red Meat", "Chicken", "Cocumber", "Carriot"];
-prices = [6.71,1.11,8.0,6.0,16.50, 2.87,1.34]; Orderlist = []
+prices = [6.71,1.11,8.0,6.0,16.50, 2.87]; Orderlist = []
 AdmPass = "Root123"; Pass=""; tries = 0 ; n = 1; j = 1;k = 0;l = 0;m = 0;total = 0;
 User = input("Customer / Admnister: ")
 
@@ -9,7 +9,7 @@ if User == "Admnister":
         tries +=1
         if tries == 4:
             print ("Blocked for Wrong password!")
-        elif AdmPass == Pass:
+        while AdmPass == Pass:
             AddorRem = input("Add / Remove (l -> list, e -> exit): ")
             
             if AddorRem == "Add":
@@ -39,13 +39,6 @@ elif User == "Customer":
         l+=1;m+=1
 
     print(f"The total amount is : {total} $")
-
-
-    
-    
-    
-
-
 
     
     
